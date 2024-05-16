@@ -1,0 +1,204 @@
+:root {
+    --primary-font: Arial, Helvetica, sans-serif;
+
+    --foreground-color: #000000;
+    --background-color: #ffffff;
+
+    --dark-color: #666666;
+
+    --mobile-width: 360px;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    color: var(--foreground-color);
+    background-color: var(--background-color);
+    text-align: center;
+    user-select: none;
+}
+
+.mobile-container {
+    max-width: var(--mobile-width);
+    margin: 0 auto;
+}
+
+#app-image {
+    width: 10em;
+    margin: 1em;
+}
+
+#app-title {
+    font-size: 2em;
+}
+
+#auth-fields-and-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.input-field {
+    padding: 0.3em;
+    font-size: 1.5em;
+    border: 2px solid black;
+    border-radius: 2em;
+}
+
+.sign-in-btn {
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: 2px solid black;
+    border-radius: 2em;
+    width: 70%;
+    color:antiquewhite;
+    background-color: black;
+}
+
+.sign-in-btn:hover {
+    box-shadow: 0px 0px 5px 5px rgb(42, 43, 2);
+    cursor: pointer;
+}
+
+#sign-in-or {
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    border: 1px solid var(--dark-color);
+    height: 0px;
+    width: 5em;
+    margin: 1em;
+}
+
+#google-btn-logo {
+    width: 1em;
+}
+
+#error-message {
+    color: red;
+    padding: 1em;
+}
+
+#user-profile-picture {
+    width: 3em;
+    height: 3em;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin: 0.5em;
+}
+
+#sign-out-btn {
+    border: 0;
+    background-color: var(--background-color);
+}
+
+#sign-out-btn img {
+    height: 3em;
+    width: 3em;
+}
+
+#sign-out-btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#app-chart {
+    display: flex;
+    flex-direction: column;
+}
+
+#app-chart p {
+    margin: 5px;
+}
+
+#app-home-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bed-room, #living-room {
+    background-color: yellow;
+    padding: 3em;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 100px;
+}
+
+#bed-room:hover, #living-room:hover {
+    cursor: pointer;
+}
+
+#lighting-mode-btn button {
+    border: 0;
+    border-radius: 5em;
+    padding: 15px 0;
+    margin: 0 1px 0 1px;
+    width: 100px;
+}
+
+#schedule-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#bed-room-schedule {
+    margin: 5px 3px 15px;
+}
+
+#input-time-section {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+#input-time-section input{
+    width: 2em;
+    font-size: large;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#shedule-time-buttons button {
+    padding: 15px 0;
+    margin: 3px;
+    border: 0;
+    border-radius: 5em;
+    background-color: black;
+    color: white;
+    width: 90px;
+}
+
+#app-footer {
+    margin: 2em 0 0 0;
+    padding: 1em;
+    background-color: #000000;
+    color: white;
+}
+
+.talk {
+    font-size: 2em;
+    height: 100px;
+    width: 100px;
+    border: 0;
+    border-radius: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.talk:active {
+    box-shadow: 0px 0px 5px 5px black;
+}
